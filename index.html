@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!--Start Quiz button-->
+    <div class="load_btn">
+        <div class="start_btn"><button>Start Quiz</button></div>
+        <div class="highscore_btn"><button>Saved Score</button></div>
+    </div>
+
+    <!--instruction Box-->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">~Once you press "Start Quiz" a 30 second timer will start.</div>
+            <div class="info">~You will be prompted questions</div>
+            <div class="info">~Each wrong question, 5 secondd will be taken off the timer</div>
+            <div class="info">~If the timer reaches 0, then the quiz will end</div>
+            <div class="info">~Good Luck!</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!--Quiz Box-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Artems coding Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">30</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text"></div>
+            <div class="option_list"></div>
+        </section>
+        <footer>
+            <div class="total_que"></div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!--Result Box-->
+    <div class="result_box">
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text"> </div>
+        <div class="scoreSec"></div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+            <button class="add">Save Score</button>
+        </div>
+    </div>
+
+    <!--Save Score Box-->
+    <div class="addScore_box">
+        <div class="title"><span>Save Your Score</span></div>
+        <div class="text">Please Enter Your Name.</div>
+            <div class="input">
+                <input type="text" class="input_box" id="user_input" name="user_input" placeholder="Enter item name" />
+            </div>
+            <div class="buttons">
+                <button class="save">Save</button>
+                <button class="home">Home</button>
+            </div>
+        <ul id="user_list"></ul>
+    </div>
+
+    <!--Highscore Box-->
+    <div class="highscore_box">
+        <div class="title"><span>Your last Saved Score</span></div>
+        <div class="display_score">
+            <ul id="User123"></ul>
+        </div>
+
+        <div class="buttons">
+                <button class="close">close</button>
+        </div>
+    </div>
+
+
+    <!--JavaScript Questions-->
+    <script src="./assets/questions.js"></script>
+    <!--JavaScript File-->
+    <script src="./assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+</html>
+</html>
+
